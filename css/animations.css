@@ -1,0 +1,678 @@
+/* line 5, ../sass/animations.scss */
+.transition-left {
+  -moz-transition-property: margin;
+  -o-transition-property: margin;
+  -webkit-transition-property: margin;
+  transition-property: margin;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  margin-left: -100%;
+}
+/* line 10, ../sass/animations.scss */
+.transition-left h1 {
+  min-width: 100%;
+}
+
+@-moz-keyframes walking-man {
+  0% {
+    background-image: url("../images/944-walking-man@3x.png");
+  }
+  50% {
+    background-image: url("../images/944-walking-man-2@3x.png");
+  }
+  100% {
+    background-image: url("../images/944-walking-man@3x.png");
+  }
+}
+@-webkit-keyframes walking-man {
+  0% {
+    background-image: url("../images/944-walking-man@3x.png");
+  }
+  50% {
+    background-image: url("../images/944-walking-man-2@3x.png");
+  }
+  100% {
+    background-image: url("../images/944-walking-man@3x.png");
+  }
+}
+@keyframes walking-man {
+  0% {
+    background-image: url("../images/944-walking-man@3x.png");
+  }
+  50% {
+    background-image: url("../images/944-walking-man-2@3x.png");
+  }
+  100% {
+    background-image: url("../images/944-walking-man@3x.png");
+  }
+}
+@-moz-keyframes running-man {
+  0% {
+    background-image: url("../images/943-running-man@3x.png");
+  }
+  50% {
+    background-image: url("../images/943-running-man-2@3x.png");
+  }
+  100% {
+    background-image: url("../images/943-running-man@3x.png");
+  }
+}
+@-webkit-keyframes running-man {
+  0% {
+    background-image: url("../images/943-running-man@3x.png");
+  }
+  50% {
+    background-image: url("../images/943-running-man-2@3x.png");
+  }
+  100% {
+    background-image: url("../images/943-running-man@3x.png");
+  }
+}
+@keyframes running-man {
+  0% {
+    background-image: url("../images/943-running-man@3x.png");
+  }
+  50% {
+    background-image: url("../images/943-running-man-2@3x.png");
+  }
+  100% {
+    background-image: url("../images/943-running-man@3x.png");
+  }
+}
+/* line 39, ../sass/animations.scss */
+.icon {
+  margin-top: 2em;
+  background-repeat: no-repeat;
+}
+
+/* line 44, ../sass/animations.scss */
+.walking-man {
+  width: 42px;
+  height: 84px;
+  -moz-animation: walking-man 1s infinite both;
+  -webkit-animation: walking-man 1s infinite both;
+  animation: walking-man 1s infinite both;
+}
+
+/* line 50, ../sass/animations.scss */
+.running-man {
+  width: 61px;
+  height: 84px;
+  -moz-animation: running-man 0.35s infinite both;
+  -webkit-animation: running-man 0.35s infinite both;
+  animation: running-man 0.35s infinite both;
+}
+
+/* line 56, ../sass/animations.scss */
+.trophy {
+  background-image: url("../images/955-trophy@3x.png");
+  width: 84px;
+  height: 84px;
+  margin-top: 0;
+}
+
+/* line 63, ../sass/animations.scss */
+.firework-emitter {
+  margin-top: 4em;
+}
+
+@-moz-keyframes shoot1 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(0, -60px);
+    background-color: pink;
+  }
+}
+@-webkit-keyframes shoot1 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(0, -60px);
+    background-color: pink;
+  }
+}
+@keyframes shoot1 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(0, -60px);
+    background-color: pink;
+  }
+}
+@-moz-keyframes shoot2 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(50px, -60px);
+    background-color: pink;
+  }
+}
+@-webkit-keyframes shoot2 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(50px, -60px);
+    background-color: pink;
+  }
+}
+@keyframes shoot2 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(50px, -60px);
+    background-color: pink;
+  }
+}
+@-moz-keyframes shoot3 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(-50px, -60px);
+    background-color: pink;
+  }
+}
+@-webkit-keyframes shoot3 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(-50px, -60px);
+    background-color: pink;
+  }
+}
+@keyframes shoot3 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(-50px, -60px);
+    background-color: pink;
+  }
+}
+@-moz-keyframes shoot4 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(-30px, -60px);
+    background-color: pink;
+  }
+}
+@-webkit-keyframes shoot4 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(-30px, -60px);
+    background-color: pink;
+  }
+}
+@keyframes shoot4 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(-30px, -60px);
+    background-color: pink;
+  }
+}
+@-moz-keyframes shoot5 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(30px, -60px);
+    background-color: pink;
+  }
+}
+@-webkit-keyframes shoot5 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(30px, -60px);
+    background-color: pink;
+  }
+}
+@keyframes shoot5 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(30px, -60px);
+    background-color: pink;
+  }
+}
+@-moz-keyframes shoot6 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(20px, -60px);
+    background-color: pink;
+  }
+}
+@-webkit-keyframes shoot6 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(20px, -60px);
+    background-color: pink;
+  }
+}
+@keyframes shoot6 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(20px, -60px);
+    background-color: pink;
+  }
+}
+@-moz-keyframes shoot7 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(-20px, -60px);
+    background-color: pink;
+  }
+}
+@-webkit-keyframes shoot7 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(-20px, -60px);
+    background-color: pink;
+  }
+}
+@keyframes shoot7 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(-20px, -60px);
+    background-color: pink;
+  }
+}
+@-moz-keyframes shoot8 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(-10px, -42px);
+    background-color: pink;
+  }
+}
+@-webkit-keyframes shoot8 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(-10px, -42px);
+    background-color: pink;
+  }
+}
+@keyframes shoot8 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(-10px, -42px);
+    background-color: pink;
+  }
+}
+@-moz-keyframes shoot9 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(10px, -42px);
+    background-color: pink;
+  }
+}
+@-webkit-keyframes shoot9 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(10px, -42px);
+    background-color: pink;
+  }
+}
+@keyframes shoot9 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(10px, -42px);
+    background-color: pink;
+  }
+}
+@-moz-keyframes shoot10 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(35px, -42px);
+    background-color: pink;
+  }
+}
+@-webkit-keyframes shoot10 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(35px, -42px);
+    background-color: pink;
+  }
+}
+@keyframes shoot10 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(35px, -42px);
+    background-color: pink;
+  }
+}
+@-moz-keyframes shoot11 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(-35px, -42px);
+    background-color: pink;
+  }
+}
+@-webkit-keyframes shoot11 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(-35px, -42px);
+    background-color: pink;
+  }
+}
+@keyframes shoot11 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(-35px, -42px);
+    background-color: pink;
+  }
+}
+@-moz-keyframes shoot12 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(40px, -30px);
+    background-color: pink;
+  }
+}
+@-webkit-keyframes shoot12 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(40px, -30px);
+    background-color: pink;
+  }
+}
+@keyframes shoot12 {
+  0% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    transform: translate(40px, -30px);
+    background-color: pink;
+  }
+}
+/* line 97, ../sass/animations.scss */
+.firework {
+  width: 5px;
+  height: 5px;
+  margin-bottom: -5px;
+}
+
+/* line 104, ../sass/animations.scss */
+.firework1 {
+  -moz-animation: shoot1 0.35s infinite linear;
+  -webkit-animation: shoot1 0.35s infinite linear;
+  animation: shoot1 0.35s infinite linear;
+  -moz-animation-delay: 600ms;
+  -webkit-animation-delay: 600ms;
+  animation-delay: 600ms;
+}
+
+/* line 104, ../sass/animations.scss */
+.firework2 {
+  -moz-animation: shoot2 0.35s infinite linear;
+  -webkit-animation: shoot2 0.35s infinite linear;
+  animation: shoot2 0.35s infinite linear;
+  -moz-animation-delay: 200ms;
+  -webkit-animation-delay: 200ms;
+  animation-delay: 200ms;
+}
+
+/* line 104, ../sass/animations.scss */
+.firework3 {
+  -moz-animation: shoot3 0.35s infinite linear;
+  -webkit-animation: shoot3 0.35s infinite linear;
+  animation: shoot3 0.35s infinite linear;
+  -moz-animation-delay: 800ms;
+  -webkit-animation-delay: 800ms;
+  animation-delay: 800ms;
+}
+
+/* line 104, ../sass/animations.scss */
+.firework4 {
+  -moz-animation: shoot4 0.35s infinite linear;
+  -webkit-animation: shoot4 0.35s infinite linear;
+  animation: shoot4 0.35s infinite linear;
+  -moz-animation-delay: 500ms;
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms;
+}
+
+/* line 104, ../sass/animations.scss */
+.firework5 {
+  -moz-animation: shoot5 0.35s infinite linear;
+  -webkit-animation: shoot5 0.35s infinite linear;
+  animation: shoot5 0.35s infinite linear;
+  -moz-animation-delay: 600ms;
+  -webkit-animation-delay: 600ms;
+  animation-delay: 600ms;
+}
+
+/* line 104, ../sass/animations.scss */
+.firework6 {
+  -moz-animation: shoot6 0.35s infinite linear;
+  -webkit-animation: shoot6 0.35s infinite linear;
+  animation: shoot6 0.35s infinite linear;
+  -moz-animation-delay: 500ms;
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms;
+}
+
+/* line 104, ../sass/animations.scss */
+.firework7 {
+  -moz-animation: shoot7 0.35s infinite linear;
+  -webkit-animation: shoot7 0.35s infinite linear;
+  animation: shoot7 0.35s infinite linear;
+  -moz-animation-delay: 900ms;
+  -webkit-animation-delay: 900ms;
+  animation-delay: 900ms;
+}
+
+/* line 104, ../sass/animations.scss */
+.firework8 {
+  -moz-animation: shoot8 0.35s infinite linear;
+  -webkit-animation: shoot8 0.35s infinite linear;
+  animation: shoot8 0.35s infinite linear;
+  -moz-animation-delay: 900ms;
+  -webkit-animation-delay: 900ms;
+  animation-delay: 900ms;
+}
+
+/* line 104, ../sass/animations.scss */
+.firework9 {
+  -moz-animation: shoot9 0.35s infinite linear;
+  -webkit-animation: shoot9 0.35s infinite linear;
+  animation: shoot9 0.35s infinite linear;
+  -moz-animation-delay: 400ms;
+  -webkit-animation-delay: 400ms;
+  animation-delay: 400ms;
+}
+
+/* line 104, ../sass/animations.scss */
+.firework10 {
+  -moz-animation: shoot10 0.35s infinite linear;
+  -webkit-animation: shoot10 0.35s infinite linear;
+  animation: shoot10 0.35s infinite linear;
+  -moz-animation-delay: 700ms;
+  -webkit-animation-delay: 700ms;
+  animation-delay: 700ms;
+}
+
+/* line 104, ../sass/animations.scss */
+.firework11 {
+  -moz-animation: shoot11 0.35s infinite linear;
+  -webkit-animation: shoot11 0.35s infinite linear;
+  animation: shoot11 0.35s infinite linear;
+  -moz-animation-delay: 300ms;
+  -webkit-animation-delay: 300ms;
+  animation-delay: 300ms;
+}
+
+/* line 104, ../sass/animations.scss */
+.firework12 {
+  -moz-animation: shoot12 0.35s infinite linear;
+  -webkit-animation: shoot12 0.35s infinite linear;
+  animation: shoot12 0.35s infinite linear;
+  -moz-animation-delay: 300ms;
+  -webkit-animation-delay: 300ms;
+  animation-delay: 300ms;
+}

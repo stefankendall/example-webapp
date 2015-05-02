@@ -1,7 +1,3 @@
-@import "compass/css3/transition";
-@import "compass/css3/transform";
-@import "compass/css3/animation";
-
 html, body {
   height: 100%;
   overflow-x: hidden;
@@ -40,34 +36,4 @@ h1 {
 
 .page3 {
   background-color: #FF7537;
-}
-
-.transition-left {
-  @include transition-property(margin);
-  @include transition-duration(1s);
-  margin-left: -100%;
-
-  h1 {
-    min-width: 100%;
-  }
-}
-
-@include keyframes(walking-man) {
-  0% {
-    background-image: url('../images/944-walking-man@3x.png');
-  }
-  50% {
-    background-image: url('../images/944-walking-man-2@3x.png');
-  }
-  100% {
-    background-image: url('../images/944-walking-man@3x.png');
-  }
-}
-
-.walking-man {
-  margin-top: 2em;
-  width:42px;
-  height:84px;
-  background-repeat: no-repeat;
-  @include animation(walking-man 1s infinite both);
 }

@@ -1,0 +1,108 @@
+@import "compass/css3/transition";
+@import "compass/css3/transform";
+@import "compass/css3/animation";
+
+.transition-left {
+  @include transition-property(margin);
+  @include transition-duration(1s);
+  margin-left: -100%;
+
+  h1 {
+    min-width: 100%;
+  }
+}
+
+@include keyframes(walking-man) {
+  0% {
+    background-image: url('../images/944-walking-man@3x.png');
+  }
+  50% {
+    background-image: url('../images/944-walking-man-2@3x.png');
+  }
+  100% {
+    background-image: url('../images/944-walking-man@3x.png');
+  }
+}
+
+@include keyframes(running-man) {
+  0% {
+    background-image: url('../images/943-running-man@3x.png');
+  }
+  50% {
+    background-image: url('../images/943-running-man-2@3x.png');
+  }
+  100% {
+    background-image: url('../images/943-running-man@3x.png');
+  }
+}
+
+.icon {
+  margin-top: 2em;
+  background-repeat: no-repeat;
+}
+
+.walking-man {
+  width: 42px;
+  height: 84px;
+  @include animation(walking-man 1s infinite both);
+}
+
+.running-man {
+  width: 61px;
+  height: 84px;
+  @include animation(running-man 0.35s infinite both);
+}
+
+.trophy {
+  background-image: url("../images/955-trophy@3x.png");
+  width: 84px;
+  height: 84px;
+  margin-top: 0;
+}
+
+.firework-emitter {
+  margin-top: 4em;
+}
+
+@mixin shoot-to($name, $x, $y) {
+  @include keyframes($name) {
+    0% {
+      background-color: #ffff00;
+    }
+    50% {
+      background-color: white;
+    }
+    100% {
+      transform: translate($x, $y);
+      background-color: pink;
+    }
+  }
+}
+
+$height: 60px;
+
+@include shoot-to(shoot1, 0, -#{$height});
+@include shoot-to(shoot2, 50px, -#{$height});
+@include shoot-to(shoot3, -50px, -#{$height});
+@include shoot-to(shoot4, -30px, -#{$height});
+@include shoot-to(shoot5, 30px, -#{$height});
+@include shoot-to(shoot6, 20px, -#{$height});
+@include shoot-to(shoot7, -20px, -#{$height});
+@include shoot-to(shoot8, -10px, -#{$height * 0.7});
+@include shoot-to(shoot9, 10px, -#{$height * 0.7});
+@include shoot-to(shoot10, 35px, -#{$height * 0.7});
+@include shoot-to(shoot11, -35px, -#{$height * 0.7});
+@include shoot-to(shoot12, 40px, -#{$height * 0.5});
+
+.firework {
+  width: 5px;
+  height: 5px;
+  margin-bottom: -5px;
+}
+
+@for $i from 1 through 12 {
+  .firework#{$i} {
+    @include animation(shoot#{$i} 0.35s infinite linear);
+    @include animation-delay(#{(1 + random(8))*100}ms);
+  }
+}
