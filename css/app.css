@@ -1,10 +1,10 @@
-/* line 4, ../sass/app.scss */
+/* line 5, ../sass/app.scss */
 html, body {
   height: 100%;
   overflow-x: hidden;
 }
 
-/* line 9, ../sass/app.scss */
+/* line 10, ../sass/app.scss */
 .pages {
   color: white;
   font-family: "Lato", sans-serif;
@@ -13,7 +13,7 @@ html, body {
   height: 100%;
 }
 
-/* line 18, ../sass/app.scss */
+/* line 19, ../sass/app.scss */
 .page {
   min-height: 100%;
   height: 100%;
@@ -23,45 +23,84 @@ html, body {
   min-width: 100%;
 }
 
-/* line 27, ../sass/app.scss */
+/* line 28, ../sass/app.scss */
 h1 {
   text-align: center;
   font-size: 3em;
 }
 
-/* line 32, ../sass/app.scss */
+/* line 33, ../sass/app.scss */
 .page1 {
   background-color: #0087C5;
 }
 
-/* line 36, ../sass/app.scss */
+/* line 37, ../sass/app.scss */
 .page2 {
   background-color: #FC4281;
 }
 
-/* line 40, ../sass/app.scss */
+/* line 41, ../sass/app.scss */
 .page3 {
   background-color: #FF7537;
 }
 
-/* line 44, ../sass/app.scss */
+/* line 45, ../sass/app.scss */
 .transition-left {
-  -webkit-transition-property: margin;
   -moz-transition-property: margin;
   -o-transition-property: margin;
+  -webkit-transition-property: margin;
   transition-property: margin;
-  -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
   -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
   transition-duration: 1s;
   margin-left: -100%;
 }
-/* line 49, ../sass/app.scss */
+/* line 50, ../sass/app.scss */
 .transition-left h1 {
   min-width: 100%;
 }
 
-/* line 54, ../sass/app.scss */
-img {
+@-moz-keyframes walking-man {
+  0% {
+    background-image: url("../images/944-walking-man@3x.png");
+  }
+  50% {
+    background-image: url("../images/944-walking-man-2@3x.png");
+  }
+  100% {
+    background-image: url("../images/944-walking-man@3x.png");
+  }
+}
+@-webkit-keyframes walking-man {
+  0% {
+    background-image: url("../images/944-walking-man@3x.png");
+  }
+  50% {
+    background-image: url("../images/944-walking-man-2@3x.png");
+  }
+  100% {
+    background-image: url("../images/944-walking-man@3x.png");
+  }
+}
+@keyframes walking-man {
+  0% {
+    background-image: url("../images/944-walking-man@3x.png");
+  }
+  50% {
+    background-image: url("../images/944-walking-man-2@3x.png");
+  }
+  100% {
+    background-image: url("../images/944-walking-man@3x.png");
+  }
+}
+/* line 67, ../sass/app.scss */
+.walking-man {
   margin-top: 2em;
+  width: 42px;
+  height: 84px;
+  background-repeat: no-repeat;
+  -moz-animation: walking-man 1s infinite both;
+  -webkit-animation: walking-man 1s infinite both;
+  animation: walking-man 1s infinite both;
 }
