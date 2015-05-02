@@ -26,7 +26,7 @@ html, body {
 /* line 27, ../sass/app.scss */
 h1 {
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
 }
 
 /* line 32, ../sass/app.scss */
@@ -58,5 +58,10 @@ h1 {
 }
 /* line 49, ../sass/app.scss */
 .transition-left h1 {
-  min-width: 600px;
+  min-width: 100%;
+}
+
+/* line 54, ../sass/app.scss */
+img {
+  margin-top: 2em;
 }
